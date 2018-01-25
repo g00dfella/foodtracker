@@ -13,8 +13,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     //MARK: Properties
     //Connect text field via Outlet connection from storyboard to manipulate it later
     @IBOutlet weak var nameTextField: UITextField!
-    //Connect label via Outlet connection from storyboard to manipulate it later
-    @IBOutlet weak var mealNameLabel: UILabel!
     //Connect image via Outlet connection from storyboard to manipulate it later
     @IBOutlet weak var photoImageView: UIImageView!
     //Connect rating control
@@ -34,7 +32,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         return true
     }
     func textFieldDidEndEditing(_ textField: UITextField) {
-        mealNameLabel.text = textField.text
     }
     
     //MARK: UIImagePickerControllerDelegate
